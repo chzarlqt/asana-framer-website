@@ -32,7 +32,7 @@
 .nav-links a:hover {
     color: black;
 }
-.btn-book, .btn-first{
+.btn-book, .btn-first {
     background-color: #dba0a0;
     color: white;
     border: none;
@@ -44,7 +44,7 @@
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 15px rgba(255, 136, 136, 0.2);
 }
-.btn-book:hover, .btn-first:hover {
+.btn-book:hover, .btn-first:hover, .btn-join:hover{
     background-color: #d69e9e; 
     transform: translateY(-2px) scale(1.05);
     box-shadow: 0 6px 20px rgba(255, 186, 186, 0.4);
@@ -182,4 +182,143 @@
     color: #666;
     line-height: 1.5;
     font-weight: 400;
+}
+.btn-join{
+    background-color: #dba0a0;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: sans-serif;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(255, 136, 136, 0.2);
+    margin-left:45%;
+    margin-bottom:150px;
+}
+.badge2 {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 30px;
+    letter-spacing: 0.05rem;
+    margin-left:100px;
+}
+.text-content h2 {
+    font-family: 'MyCustomSerif';
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: -0.08rem;
+    margin-left:100px;
+}
+.text-content p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+    margin-left:100px;
+}
+.classes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px 5% 30px 5%;
+    background-color:white;
+    margin-bottom:250px;
+}
+.class-card {
+    background: whitesmoke;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.class-card:hover {
+    transform: translateY(-5px);
+}
+.card-image{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.card-image img {
+    width: 93%;
+    height: 90%;
+    object-fit: cover; 
+    border-radius: 20px;
+    margin-top:20px;
+    margin-left: 20px;
+    
+}
+.card-content {
+    padding: 30px 0; 
+}
+.card-content h3 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-left:20px;
+}
+.card-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 90%;
+    margin-left: 20px;
+}
+.ghost-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #e6b3b3; 
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 50px;
+    background-color: transparent; 
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    margin-left: 40%;
+}
+.ghost-btn:hover {
+    background-color: #f4d5d5; 
+    color: #e6b3b3; 
+}
+.intro-section {
+    padding: 80px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.badge3 {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 30px;
+    letter-spacing: 0.05rem;
+}
+.gallery-section h2 {
+    font-family: 'MyCustomSerif';
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: -0.08rem;
+}
+.gallery-section p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 40px;
 }
