@@ -229,7 +229,7 @@
     gap: 30px;
     padding: 20px 5% 30px 5%;
     background-color:white;
-    margin-bottom:250px;
+    
 }
 .class-card {
     background: whitesmoke;
@@ -291,7 +291,7 @@
     background-color: #f4d5d5; 
     color: #e6b3b3; 
 }
-.intro-section {
+.gallery-section {
     padding: 80px;
     text-align: center;
     background-color: white;
@@ -321,4 +321,32 @@
     font-size: 1.1rem;
     max-width: 600px;
     margin-bottom: 40px;
+}
+.carousel{
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 5s infinite linear;
+}
+.slide img{
+    flex: 0 0 5em;
+    height: 20em;
+    padding: 1em;
+    border-radius: 0.2em;
+    align-content: center;
+    
+}
+@keyfromes spin{
+    from{ translate:0;}
+    to {translate: -100%;}
 }
