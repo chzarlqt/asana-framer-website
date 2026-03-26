@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    
+}
 .main-header {
     position: sticky;
     top: 0;
@@ -325,28 +325,112 @@
 .carousel{
     margin: 100px auto;
     width: 90%;
-    display: flex;
-    overflow-x: auto;
+    overflow: hidden;
+    
 }
 .carousel::-webkit-scrollbar{
     display: none;
 }
+.track{
+    display: flex;
+    width: 200%;
+    gap: 0;
+    align-items: center;
+    animation: scroll 18s linear infinite;
+}
 .group {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1em;
-    animation: spin 5s infinite linear;
+    gap: 0%;
+    width: 50%;
 }
 .slide img{
-    flex: 0 0 5em;
-    height: 20em;
-    padding: 1em;
-    border-radius: 0.2em;
-    align-content: center;
+    height: 14rem;
+    width: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+@keyframes scroll{
+    0%{ transform: translateX(0); }
+    100%{ transform: translateX(-60%); }
+}
+.carousel:hover .track{
+    animation-play-state: paused;
+}
+.benefits-section {
+    padding: 80px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.badge4 {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid #eee;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 30px;
+    letter-spacing: 0.05rem;
+}
+.benefits-section h2 {
+    font-family: 'MyCustomSerif';
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: -0.08rem;
+}
+.benefits-section p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 1px;
+}
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 24px;
+    padding: 40px 10%;
+    background-color: #ffffff;
     
 }
-@keyfromes spin{
-    from{ translate:0;}
-    to {translate: -100%;}
+.benefit-card {
+    background-color: #f9f9f9; 
+    padding: 40px 30px;
+    border-radius: 24px;       
+    text-align: left;          
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #fefefe;    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03); 
+    margin-bottom: 10px;
+}
+.benefit-card h3 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+.benefit-card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+.icon{
+    color: #dba0a0;
 }
